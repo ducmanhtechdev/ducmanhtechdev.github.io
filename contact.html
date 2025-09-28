@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovariCode - Liên hệ</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <img src="assets/images/logo.png" alt="Logo NovariCode">
+    <nav>
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="about.html">Thông tin</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="roadmap.html">Hành trình</a></li>
+        <li><a href="contact.html" class="active">Liên hệ</a></li>
+      </ul>
+    </nav>
+      <!-- nút toggle menu -->
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+
+  <section>
+    <h2>Liên hệ với mình</h2>
+    <form>
+      <input type="text" placeholder="Họ và tên" required>
+      <input type="email" placeholder="Email" required>
+      <textarea rows="5" placeholder="Nội dung tin nhắn" required></textarea>
+      <button type="submit">Gửi</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Kênh kết nối</h2>
+    <div class="cards" style="text-align: center;">
+      <div class="card"><a href="https://www.facebook.com/ducmanh0206/"><img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt=""></a></div>
+      <div class="card"> <a href="https://github.com/ducmanhtechdev"><img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt=""></a></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 NovariCode. All rights reserved.</p>
+  </footer>
+  <script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const navLinks = document.querySelector("nav ul");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    // đổi icon ☰ ↔ ✖
+    menuToggle.textContent = navLinks.classList.contains("active") ? "✖" : "☰";
+  });
+</script>
+
+</body>
+</html>

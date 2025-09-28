@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovariCode - Roadmap</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <img src="assets/images/logo.png" alt="Logo NovariCode">
+    <nav>
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="about.html">Thông tin</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="roadmap.html" class="active">Chứng chỉ</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul>
+    </nav>
+      <!-- nút toggle menu -->
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+<section id="certificates">
+  <h2 class="section-title">Chứng chỉ đạt được</h2>
+  <div class="cert-timeline">
+
+    <div class="cert-item">
+      <div class="cert-dot"></div>
+      <div class="cert-box">
+        <img src="./assets/images/CertificateIT1.png" alt="Frontend Certificate">
+        <h3>Chứng chỉ Nhập Môn IT - lúc còn là học viên tại <a class="link-certificate" href="https://fullstack.edu.vn/">F8</a></h3>
+        <p></p>
+        <span class="cert-org">F8 - 2022</span>
+      </div>
+    </div>
+
+    <div class="cert-item">
+      <div class="cert-dot"></div>
+      <div class="cert-box">
+        <img src="./assets/images/HTMLCSS.png" alt="Laravel Certificate">
+        <h3>Chứng chỉ HTML/CSS học viên  <a class="link-certificate" href="https://fullstack.edu.vn/">F8</a> </h3>
+        <p>Kiến thức cơ bản đến dự án thực tế của HTML - CSS</p>
+        <span class="cert-org">F8 - 2023</span>
+      </div>
+    </div>
+
+    <div class="cert-item">
+      <div class="cert-dot"></div>
+      <div class="cert-box">
+        <img src="./assets/images/JS.png" alt="MySQL Certificate">
+        <h3>Chứng chỉ Javascript (Ngôn ngữ lập trình web) học viên  </h3>
+        <p>Kiến thức ngôn ngữ lập trình căn bản + kiến thức vào web, dự án thực tế <a class="link-certificate" href="https://fullstack.edu.vn/">F8</a></p>
+        <span class="cert-org">F8 - 2024</span>
+      </div>
+    </div>
+
+      <div class="cert-item">
+      <div class="cert-dot"></div>
+      <div class="cert-box">
+        <img src="./assets/images/C++.png" alt="MySQL Certificate">
+        <h3>Chứng chỉ C++ căn bản (Đạt 100% số điểm trong kỳ thi chứng chỉ) tại <a href="https://haizuka.vn/" class="link-certificate" style="color: rgb(95, 95, 217);">học viện haizuka</a>   </h3>
+        <p> Học lập trình bài bản với các kiến thức của một ngôn ngữ lập trình căn bản
+          Hệ thống học lập trình chấm tự động. 
+          Được hướng dẫn bởi thầy Hải, không chỉ học online mà còn được hỗ trợ trực tiếp sau buổi học
+          Mình vẫn đang là học viên của thầy😍
+
+        </p>
+        <span class="cert-org">Haizuka Academy - kể từ 2024 </span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <footer>
+    <p>© 2025 NovariCode. All rights reserved.</p>
+  </footer>
+  <script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const navLinks = document.querySelector("nav ul");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    // đổi icon ☰ ↔ ✖
+    menuToggle.textContent = navLinks.classList.contains("active") ? "✖" : "☰";
+  });
+</script>
+
+</body>
+</html>

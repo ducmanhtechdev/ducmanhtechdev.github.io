@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovariCode - Trang chủ</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <img src="assets/images/logo.png" alt="Logo NovariCode">
+    <nav>
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="about.html">Thông tin</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="roadmap.html">Hành trình</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul>
+    </nav>
+      <!-- nút toggle menu -->
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Xin chào, mình là <span style="color:#fff;" class="typing">NovariCode</span></h1>
+      <p>Web Developer | Learner</p>
+      <a href="about.html">Tìm hiểu thêm</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Về tôi</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+    <p>
+      Đức Mạnh (nickname: Mạnh Novaricode hay MNovaricode), hiện tại đang là sinh viên năm 2 tại trường đại học
+      Công Nghệ Thông Tin Và Truyền Thông Việt Hàn Đà Nẵng - Đại Học Đà Nẵng. Với niềm đam mê công nghệ thông tin
+      và ước mơ trở thành một developer ( nhà phát triển), tham gia vào các dự án công nghệ, xây dựng tiện ích, sản phẩm
+      phục vụ cho người dùng. Tích lũy kinh nghiệm mỗi ngày.
+    </p>
+
+    <p>
+      Tất nhiên, tôi cũng còn nhiều điểm cần cải thiện, trong đó có ngoại ngữ.
+      Dù hiện tại chưa thật sự giỏi tiếng Anh, nhưng mỗi ngày tôi đều cố gắng rèn luyện, đọc thêm tài liệu, và học từ
+      vựng chuyên ngành.
+      Bởi tôi tin rằng: ngôn ngữ là chiếc chìa khóa quan trọng để mở rộng cánh cửa tri thức và kết nối với thế giới
+      công nghệ.
+    </p>
+    </p>
+
+  </section>
+
+
+
+  <section class="skills-section fade-in">
+    <h2>Kỹ năng nổi bật</h2>
+    <div class="skill">
+      <span>HTML</span>
+      <div class="progress">
+        <div class="progress-bar" style="width:92%">92%</div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span>CSS</span>
+      <div class="progress">
+        <div class="progress-bar" style="width:67%">67%</div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span>JavaScript</span>
+      <div class="progress">
+        <div class="progress-bar" style="width:70%">70%</div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span>C++</span>
+      <div class="progress">
+        <div class="progress-bar" style="width:50%">50%</div>
+      </div>
+    </div>
+  </section>
+
+
+<section id="projects">
+  <h2 class="section-title">Dự án cá nhân</h2>
+  <div class="project-grid">
+    <!-- Card 1 -->
+    <div class="project-card" >
+      <img src="./assets/images/travel.jpg" alt="Demo Project" class="project-card-img" />
+      <div class="project-content">
+        <h3>Website Du Lịch 1</h3>
+        <p>Một website du lịch với những địa điểm đặt sẵn.</p>
+        <div class="tags">
+          <span>HTML</span><span>CSS</span><span>JS</span>
+        </div>
+        <a href="https://travelteam19.pages.dev/" class="btn-demo">Xem Demo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <section>
+    <h2>Kết nối</h2>
+    <p style="text-align:center;">
+      Hãy cùng kết nối và chia sẻ kiến thức cùng nhau!<br>
+      <a href="contact.html" style="color:#00c6ff;">👉 Liên hệ ngay</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 NovariCode. All rights reserved.</p>
+  </footer>
+
+  <script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const navLinks = document.querySelector("nav ul");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    // đổi icon ☰ ↔ ✖
+    menuToggle.textContent = navLinks.classList.contains("active") ? "✖" : "☰";
+  });
+</script>
+
+</body>
+
+</html>

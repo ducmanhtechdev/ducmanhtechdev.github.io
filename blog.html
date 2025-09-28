@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovariCode - Blog</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <img src="assets/images/logo.png" alt="Logo NovariCode">
+    <nav>
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="about.html">Thông tin</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="roadmap.html">Hành trình</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul>
+    </nav>
+      <!-- nút toggle menu -->
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+<section><h2>Chưa có bài viết</h2></section>
+  
+  <!-- <section>
+    <h2>Bài viết mới</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Làm quen với HTML & CSS</h3>
+        <p>Bài viết cơ bản dành cho người mới bắt đầu học web.</p>
+      </div>
+      <div class="card">
+        <h3>Lập trình PHP cơ bản</h3>
+        <p>Học cách xây dựng ứng dụng web động bằng PHP.</p>
+      </div>
+      <div class="card">
+        <h3>Laravel Framework</h3>
+        <p>Tìm hiểu MVC và cách Laravel giúp code dễ hơn.</p>
+      </div>
+    </div>
+  </section> -->
+<!-- 
+  <section>
+    <h2>Chuyên mục</h2>
+    <div class="cards">
+      <div class="card">Frontend</div>
+      <div class="card">Backend</div>
+      <div class="card">Database</div>
+      <div class="card">Tips & Tricks</div>
+    </div>
+  </section> -->
+
+  <footer>
+    <p>© 2025 NovariCode. All rights reserved.</p>
+  </footer>
+  <script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const navLinks = document.querySelector("nav ul");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    // đổi icon ☰ ↔ ✖
+    menuToggle.textContent = navLinks.classList.contains("active") ? "✖" : "☰";
+  });
+</script>
+
+</body>
+</html>

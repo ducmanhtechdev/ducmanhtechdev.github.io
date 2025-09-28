@@ -1,0 +1,516 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0a0f24;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  background: rgba(10, 15, 36, 0.95);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 8%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+header img {
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00c6ff;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero a {
+  padding: 12px 30px;
+  background: #fff;
+  color: #007bff;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero a:hover {
+  background: #00c6ff;
+  color: #fff;
+}
+
+/* Section chung */
+section {
+  padding: 80px 10%;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Card Layout */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #141a35;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+/* Timeline (cho About và Roadmap) */
+.timeline {
+  position: relative;
+  margin: 50px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: linear-gradient(180deg, #007bff, #00c6ff);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  padding: 20px;
+  background: #141a35;
+  border-radius: 10px;
+  width: 45%;
+  position: relative;
+  margin: 30px 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.timeline-item.left {
+  left: 0;
+}
+
+.timeline-item.right {
+  left: 55%;
+}
+
+.timeline-item h3 {
+  margin-bottom: 10px;
+  color: #00c6ff;
+}
+
+/* Contact Form */
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  padding: 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: #1f2a48;
+  color: #fff;
+}
+
+form button {
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  opacity: 0.85;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0a0f24;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    display: none;
+    background: #0a0f24;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    border-radius: 8px;
+    padding: 20px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 15px 0;
+  }
+
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+
+
+.skills-section {
+  margin: 60px auto;
+  max-width: 700px;
+  text-align: left;
+  color: #fff;
+}
+
+.skills-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #00c6ff;
+  text-shadow: 0 0 8px rgba(0,198,255,0.7);
+}
+
+.skill {
+  margin-bottom: 25px;
+}
+
+.skill span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #f0f0f0;
+}
+
+.progress {
+  background: #1e2a38;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 28px;
+  box-shadow: inset 0 0 8px rgba(0,198,255,0.5);
+}
+
+.progress-bar {
+  height: 100%;
+  text-align: right;
+  padding-right: 12px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  border-radius: 12px 0 0 12px;
+  transition: width 1.5s ease-in-out;
+}
+
+
+
+.typing {
+  display:block;
+     /* Giữ chữ thẳng hàng baseline */
+  font-size: 2.5rem;
+  /* font-weight: bold; */
+  color: #00c6ff;
+  border-right: 3px solid #00c6ff;
+  white-space: nowrap;
+  overflow: hidden;
+
+  /* Fix nhảy chữ */
+  line-height: 1.2em;       
+  min-height: 1.2em;        
+  animation: typing 6s steps(20, end) infinite alternate,
+             blink 0.9s infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+
+#projects {
+  padding: 80px 20px;
+  background: #f8faff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  color: #003366;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: 50%;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.project-content h3 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.project-content p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.tags {
+  margin-bottom: 15px;
+}
+
+.tags span {
+  display: inline-block;
+  background: #e6f0ff;
+  color: #003366;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 12px;
+  margin: 0 5px 5px 0;
+}
+
+.btn-demo {
+  display: inline-block;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-demo:hover {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.project-card-img  {
+ object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+#certificates {
+  padding: 80px 20px;
+  background: #f8faff;
+  text-align: center;
+}
+
+#certificates .section-title {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 50px;
+}
+
+.cert-timeline {
+  position: relative;
+  margin: 0 auto;
+  max-width: 700px;
+  padding-left: 25px;
+  border-left: 3px solid #00c6ff;
+}
+
+.cert-item {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.cert-dot {
+  position: absolute;
+  left: -13px;
+  top: 20px;
+  width: 24px;
+  height: 24px;
+  background: #00c6ff;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #0072ff33;
+}
+
+.cert-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.cert-box img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.cert-box h3 {
+  font-size: 1.2rem;
+  color: #003366;
+  margin-bottom: 8px;
+}
+
+.cert-box p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.cert-org {
+  font-size: 0.85rem;
+  color: #0072ff;
+  font-weight: bold;
+}
+
+.link-certificate {
+  color: #003366;
+  text-decoration: none;
+}
+
+
+/* Nút menu mặc định ẩn */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    display: none;
+    background: #0a0f24;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 220px;
+    border-radius: 8px;
+    padding: 20px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

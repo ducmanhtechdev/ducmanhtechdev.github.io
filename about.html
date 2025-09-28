@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovariCode - Giới thiệu</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <img src="assets/images/logo.png" alt="Logo NovariCode">
+    <nav>
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="about.html" class="active">Thông tin</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="roadmap.html">Hành trình</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul>
+    </nav>
+      <!-- nút toggle menu -->
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+
+  <section>
+    <h2>Giới thiệu bản thân</h2>
+    <p style="max-width:700px; margin:auto; text-align:center;">
+      Mình là một lập trình viên với niềm đam mê xây dựng website và ứng dụng hiện đại.
+      Sở thích: công nghệ, học hỏi, sáng tạo và chia sẻ kiến thức.
+    </p>
+  </section>
+
+  <section>
+    <h2>Kỹ năng</h2>
+    <div class="cards">
+      <div class="card">Frontend: HTML, CSS, JS</div>
+      <div class="card">C++</div>
+      <!-- <div class="card">Backend: PHP, Node.js</div>
+      <div class="card">Framework: Laravel, Express</div>
+      <div class="card">Database: MySQL, MongoDB</div> -->
+    </div>
+  </section>
+
+  <section>
+    <h2>Hành trình học tập</h2>
+    <div class="timeline">
+      <div class="timeline-item left">
+        <h3>2018 - THCS Lê Thị Hồng Gấm</h3>
+        <p></p>
+      </div>
+      <div class="timeline-item right">
+        <h3>2021 - THPT Huỳnh Thúc Kháng - Tiên Phước</h3>
+        <!-- <p>Tham gia CLB tin học, bắt đầu học lập trình Pascal & C++.</p> -->
+      </div>
+      <div class="timeline-item left">
+        <h3>2024 - Trường Đại Học CNTT và TT Việt Hàn</h3>
+        <p>Chuyên ngành CNTT, bắt đầu học về web development.</p>
+      </div>
+      <div class="timeline-item right">
+        <h3>2025 - Hiện tại</h3>
+        <p>Xây dựng website cá nhân MNovariCode.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 NovariCode. All rights reserved.</p>
+  </footer>
+  <script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const navLinks = document.querySelector("nav ul");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    // đổi icon ☰ ↔ ✖
+    menuToggle.textContent = navLinks.classList.contains("active") ? "✖" : "☰";
+  });
+</script>
+
+</body>
+</html>
